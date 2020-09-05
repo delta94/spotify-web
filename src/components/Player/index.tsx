@@ -3,6 +3,7 @@ import React from "react";
 import "./styles.css";
 import Sidebar from "../../components/Sidebar";
 import Body from "../../components/Body";
+import Footer from "../Footer";
 
 
 interface Iplayer {
@@ -16,6 +17,7 @@ const Player: React.FC<Iplayer> = ({ spotify }) => {
         <Sidebar />
         <Body />
       </div>
+      <Footer />
     </div>
   );
 };
