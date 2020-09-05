@@ -7,6 +7,7 @@ import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import "./styles.css";
 import Header from "../Header";
 import { useDataLayerValue } from "../../context/DataLayer";
+import SongRow from "../SongRow";
 
 interface IBody {
   spotify: SpotifyWebApi.SpotifyWebApiJs;
