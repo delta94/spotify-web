@@ -6,8 +6,16 @@ import SidebarOption from "../SidebarOption";
 
 import logo from "../../assets/img/logo.svg";
 import "./styles.css";
+import { useDataLayerValue } from "../../context/DataLayer";
+
+interface IPlaylistItems {
+  name: string;
+}
 
 const Sidebar: React.FC = () => {
+  const [{ playlists }, dispatch] = useDataLayerValue();
+  console.log(playlists);
+
   return (
     <div className="sidebar">
       <img className="sidebar__logo" src={logo} alt="Spotify Logo" />
@@ -18,6 +26,10 @@ const Sidebar: React.FC = () => {
       <br />
       <strong className="sidebar__title">Playlists</strong>
       <hr />
+
+      {playlists?.items?.map((playlist: IPlaylistItems, index: number) => (
+        <SidebarOption key={index} title={playlist.name} />
+      ))}
     </div>
   );
 };

@@ -1,6 +1,10 @@
+export interface IPlaylist {
+    items: { name: string }[];
+}
+
 interface IinitialState {
     user: string;
-    playlist: [];
+    playlists: IPlaylist;
     playing: boolean;
     item: string;
     token: string;
@@ -10,6 +14,7 @@ interface IAction {
     type: string;
     user: string[];
     token: string;
+    playlists: object;
 }
 
 const reducer = (state: IinitialState, action: IAction) => {
@@ -19,13 +24,18 @@ const reducer = (state: IinitialState, action: IAction) => {
         case 'SET_USER':
             return {
                 ...state,
-                user: action.user
+                user: action.user,
             }
 
         case 'SET_TOKEN':
             return {
                 ...state,
-                token: action.token
+                token: action.token,
+            }
+        case 'SET_PLAYLISTS':
+            return {
+                ...state,
+                playlists: action.playlists,
             }
 
         default:
