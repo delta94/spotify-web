@@ -1,17 +1,18 @@
 import React from "react";
 
 import "./styles.css";
+import { IconProps } from "@material-ui/core";
 
 interface ISidebarOption {
   title?: string;
   Icon?: any;
-  option?: string;
 }
 
 const SidebarOption: React.FC<ISidebarOption> = ({ title, Icon }) => {
   return (
     <div className="sidebarOption">
-      <p>{title}</p>
+      {Icon && <Icon className="sidebarOption__icon" />}
+      {Icon ? <h4>{title}</h4> : <p>{title}</p>}
     </div>
   );
 };
