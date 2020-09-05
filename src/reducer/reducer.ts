@@ -8,6 +8,7 @@ interface IinitialState {
     playing: boolean;
     item: string;
     token: string;
+    discover_weekly: string;
 }
 
 interface IAction {
@@ -15,6 +16,7 @@ interface IAction {
     user: string[];
     token: string;
     playlists: object;
+    discover_weekly: string;
 }
 
 const reducer = (state: IinitialState, action: IAction) => {
@@ -36,6 +38,12 @@ const reducer = (state: IinitialState, action: IAction) => {
             return {
                 ...state,
                 playlists: action.playlists,
+            }
+
+        case 'SET_DISCOVER_WEEKLY':
+            return {
+                ...state,
+                discover_weekly: action.discover_weekly,
             }
 
         default:
