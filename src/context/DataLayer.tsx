@@ -5,8 +5,8 @@ export const initialState = {
   playlist: {},
   playing: false,
   item: "",
-  // token:
-  //   "BQDFKs7batXj5gBBB9Qh9_ME5Fuxot2woTTAAJshYzoYD4G_-Pt2RvoCR9VN2ay3mL9niL_uvHlHkGG5c0yZkALDr5ALxZMuPD0ZQfe3nmrBUiR8ujmQc2pM8ixlgC-f4GI_4m9KPSr4ijxuaVTDyIVrlRGYhbsnLjB7fOsGVWNQkL7W",
+  token:
+    "BQDFKs7batXj5gBBB9Qh9_ME5Fuxot2woTTAAJshYzoYD4G_-Pt2RvoCR9VN2ay3mL9niL_uvHlHkGG5c0yZkALDr5ALxZMuPD0ZQfe3nmrBUiR8ujmQc2pM8ixlgC-f4GI_4m9KPSr4ijxuaVTDyIVrlRGYhbsnLjB7fOsGVWNQkL7W",
 };
 
 interface IinitialState {
