@@ -10,7 +10,9 @@ interface Iplayer {
 const Player: React.FC<Iplayer> = ({ spotify }) => {
   return (
     <div className="player">
-      <h1>player</h1>
+      <div className="player__body">
+        
+      </div>
     </div>
   );
 };
