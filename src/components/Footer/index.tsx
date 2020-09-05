@@ -16,12 +16,12 @@ const Footer: React.FC = () => {
       <div className="footer__left">
         <img
           className="footer__albumLogo"
-          src="https://lh3.googleusercontent.com/r55K1eQcji3QMHRKERq6zE1-csoh_MTOHiKyHTuTOblhFi_rIz06_8GN5-DHUGJOpn79=s180"
+          src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/folder_920_201707260845-1.png"
           alt=""
         />
         <div className="footer__songInfo">
-          <h4>Akon</h4>
-          <p>Dont Matter</p>
+          <h4>Artist</h4>
+          <p>Music</p>
         </div>
       </div>
       <div className="footer__center">
