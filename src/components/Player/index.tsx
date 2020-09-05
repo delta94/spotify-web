@@ -4,10 +4,11 @@ import "./styles.css";
 import Sidebar from "../../components/Sidebar";
 import Body from "../../components/Body";
 import Footer from "../Footer";
+import SpotifyWebApi from "spotify-web-api-js";
 
 
 interface Iplayer {
-  spotify: '';
+  spotify: SpotifyWebApi.SpotifyWebApiJs;
 }
 
 const Player: React.FC<Iplayer> = ({ spotify }) => {
@@ -15,7 +16,7 @@ const Player: React.FC<Iplayer> = ({ spotify }) => {
     <div className="player">
       <div className="player__body">
         <Sidebar />
-        <Body />
+        <Body spotify={spotify} />
       </div>
       <Footer />
     </div>

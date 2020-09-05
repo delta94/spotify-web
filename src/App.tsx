@@ -41,7 +41,9 @@ function App() {
     }
   }, [dispatch, token]);
 
-  return <div className="app">{token ? <Player spotify='' /> : <Login />}</div>;
+  console.log(spotify);
+
+  return <div className="app">{token ? <Player spotify={spotify} /> : <Login />}</div>;
 }
 
 export default App;

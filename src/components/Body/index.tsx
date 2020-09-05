@@ -1,8 +1,13 @@
 import React from 'react';
+import SpotifyWebApi from 'spotify-web-api-js';
 
 import './styles.css';
 
-const Body: React.FC = () => {
+interface IBody {
+  spotify: SpotifyWebApi.SpotifyWebApiJs;
+}
+
+const Body: React.FC<IBody> = ({ spotify }) => {
   return (
       <div className="body">
           <h1>body</h1>
