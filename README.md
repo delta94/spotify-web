@@ -1,7 +1,7 @@
-## Youtube Clone (React.js && Typescript)
+## Spotify Web (React.js && Typescript)
 
-<img src="https://github.com/vbeloti/spotify-web/blob/master/.github/img/spotify-1.jpg?raw=true" alt="Youtube Clone" />
-<img src="https://github.com/vbeloti/spotify-web/blob/master/.github/img/spotify-2.jpg?raw=true" alt="Youtube Clone" />
+<img src="https://github.com/vbeloti/spotify-web/blob/master/.github/img/spotify-1.jpg?raw=true" alt="Spotify Web" />
+<img src="https://github.com/vbeloti/spotify-web/blob/master/.github/img/spotify-2.jpg?raw=true" alt="Spotify Web" />
 
 In the project directory, you can run:
 
